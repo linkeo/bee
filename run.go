@@ -130,9 +130,9 @@ func readAppDirectories(directory string, paths *[]string) {
 
 	useDirectory := false
 	for _, fileInfo := range fileInfos {
-		if strings.HasSuffix(fileInfo.Name(), "docs") {
-			continue
-		}
+		// if strings.HasSuffix(fileInfo.Name(), "docs") {
+		// 	continue
+		// }
 
 		if isExcluded(fileInfo) {
 			continue
